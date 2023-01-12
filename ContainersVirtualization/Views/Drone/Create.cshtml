@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Drone";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Drone</h1>
+</div>
+
+<div class="container">
+
+    <form>
+        <h2 class="m-3 text-center display-6 fst-italic">
+            Cadastrar Drone
+        </h2>
+
+        <div class="mb-3 form-check ">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="rastreamento-form">Rastreamento Ativo</label>
+            <div id="latitude-helper" class="form-text">Definir o Rastreamento na criação do novo Drone</div>
+
+        </div>
+        <div class="mt-5 d-flex">
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <div id="latitude-helper" class="form-text m-2">* Cadastro do Drone é automático</div>
+        </div>
+    </form>
+
+</div>

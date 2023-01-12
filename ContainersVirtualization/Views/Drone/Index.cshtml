@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Drone";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Drone</h1>
+</div>
+
+<div class="container">
+
+    <form>
+        <h2 class="m-3 text-center display-6 fst-italic">
+            Definir localização do Drone
+        </h2>
+        <div class="row">
+            <div class="mb-3 col-md-5">
+                <label for="latitude-form" class="form-label">Latitude</label>
+                <input type="text" class="form-control" id="latitude" aria-describedby="latitude">
+            </div>
+            <div class="mb-3 col-md-5">
+                <label for="longitude-form" class="form-label">Longitude</label>
+                <input type="text" class="form-control" id="longitude" aria-describedby="longitude">
+            </div>
+            <div class="mb-3 col-md-2">
+            <label for="droneid-form" class="form-label">Id do Drone</label>
+            <input type="number" class="form-control" id="droneid" aria-describedby="droneid" value="1" placeholder="1">
+        </div>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="rastreamento-form">Rastreamento Ativo</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Atualizar</button>
+    </form>
+
+</div>

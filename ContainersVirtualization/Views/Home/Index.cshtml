@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem-vindo</h1>
+</div>
+
+<div class="container">
+    <article class="markdown-body entry-content container-lg" itemprop="text">
+        <p class="m-3 text-center fst-italic ">
+            O objetivo deste projeto é desenvolver uma solução para o agronegócio que realiza a coleta de dados via sensores de temperatura e umidade. Esses sensores ficarão instalados em um drone com uma altíssima economia pois conta com pequenos, porém muito eficientes painéis fotovoltaicos.
+        </p>
+        <h3 dir="auto"><g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji> Objetivos, Regras e Requisitos</h3>
+        <p dir="auto">O projeto contem as seguintes regras de avaliação</p>
+        <ul class="contains-task-list">
+            <li class="task-list-item">
+                <input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Desenvolver uma aplicação web na qual podemos informar manualmente as informações:
+                <ul dir="auto">
+                    <li>id_drone (Identificador do Drone)</li>
+                    <li>Latitude e longitude (Precisamos de uma latitude e longitude validas.);</li>
+                    <li>Temperatura (-25º até 40º);</li>
+                    <li>Umidade (0% - 100%);</li>
+                    <li>Ativar rastreamento (ligada-desligada)</li>
+                </ul>
+            </li>
+            <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> A cada 10 segundos é feito uma leitura dos dados (temperatura e umidade) e os dados enviados para um serviço de mensagens.</li>
+            <li class="task-list-item">
+                <input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> O microsserviço deve enviar um alerta (pode ser um email) quando, dentro do espaço de 1 minuto:
+                <ul dir="auto">
+                    <li>Temperatura (&gt;= 35 ou &lt;=0) ou</li>
+                    <li>(Umidade &lt;= 15%).</li>
+                </ul>
+            </li>
+            <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> Use RabbitMQ ou Apache Kafka</li>
+            <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> • Readme.md com detalhes do projeto, de como subir, configurar, printscreen com o funcionamento da aplicação, ou um vídeo.</li>
+        </ul>
+        <h2 dir="auto">
+            <g-emoji class="g-emoji" alias="computer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png">💻</g-emoji> Pré-requisitos
+        </h2>
+        <p dir="auto">Antes de começar, verifique se você atendeu aos seguintes requisitos:</p>
+        <ul dir="auto">
+            <li>
+                <p dir="auto">Você instalou a versão mais recente de Docker, Docker-compose, Docker Desktop, etc..</p>
+            </li>
+            <li>
+                <p dir="auto">Você tenha instalado a JDK 17 juntamente com sua IDE favorita para Java.</p>
+            </li>
+            <li>
+                <p dir="auto">Você tenha instalado alguma plataforma de API para desenvolvedores, como o Postman API ou Insomnia REST.</p>
+            </li>
+        </ul>
+        <p dir="auto">Para validar se o projeto atende as regras, é só alterar os valores da requisição, executa-la novamente e avaliar os logs da aplicação.</p>
+
+        <h2 dir="auto"><g-emoji class="g-emoji" alias="smile" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png">😄</g-emoji> Fique a vontade para avaliar e contribuir!<br></h2>
+        <p dir="auto">Todo feedback é bem-vindo e o processo de melhoria é continuo!</p>
+        <p align="center" dir="auto">
+
+        </p>
+    </article>
+</div>
+
